@@ -13,13 +13,17 @@ set -euo pipefail
 cd "${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}"
 
 # 1) dialog-harness submodule を展開（web の fresh clone は submodule 未init）
-git submodule update --init --recursive dialog-harness 2>/dev/null || true
+#    失敗しても session は継続するが、原因診断のためエラーは握り潰さず表示する。
+if ! sm_err="$(git submodule update --init --recursive dialog-harness 2>&1)"; then
+  echo "[session-start] submodule update に失敗（session は継続）: ${sm_err}" >&2
+fi
 
 # 2) DH の開発スキルを .claude/skills/ へ symlink（invocable 化）
 DH_SKILLS="dialog-harness/.claude/skills"
 if [ -d "$DH_SKILLS" ]; then
   mkdir -p .claude/skills
   linked=0
+  shopt -s nullglob  # glob が何もマッチしない時に literal ".../*/" でループが空回りするのを防ぐ
   for dir in "$DH_SKILLS"/*/; do
     name="$(basename "$dir")"
     target=".claude/skills/$name"
