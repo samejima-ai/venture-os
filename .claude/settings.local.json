@@ -1,0 +1,5 @@
+{
+  "permissions": {
+    "allow": ["Write(.claude/hooks/**)", "Write(.claude/settings.json)"]
+  }
+}
