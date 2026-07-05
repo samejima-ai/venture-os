@@ -5,7 +5,7 @@ version: 0.1.0
 description: >-
   venture-os の第2層 需要スモークテスト実働機構。demand-sensor が design_only で"設計"した
   反証可能な需要前提を、gtm_execution 昇格後に実市場で"実走"させ（LP＋事前登録・小予算広告・
-  fake-door・concierge MVP）、実反応を earned データとして計測して三センサー（needs/貨幣/信用）へ
+  fake-door・concierge MVP）、実反応を earned データとして計測して三センサー（需給/貨幣/信用）へ
   還元する。DH の autonomous-drive 相当（机上でなく実市場に出す最初の点）。Make sure to use this skill
   whenever a venture needs to actually test demand in the real market: LP を出して反応を見たい、
   需要スモークテストを回したい、事前登録/広告 CVR で仮説を実検証したい、fake-door で払うか確かめたい、
