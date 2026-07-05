@@ -38,7 +38,7 @@ VO:L0/L1 実行中の判断点で発動する合議制判断機構。DH `crosscu
 
 **対立トライアングル**: 利益⇔信用（最大化 vs 充足）／利益⇔需給（儲かる形 vs 客が欲しい形）／信用⇔需給（深い信頼 vs 大衆需要）。3辺すべてが衝突する＝耐久力の源。
 
-**水準分離ルール**（資本家の憲法攻撃リスクの解決）: 資本家は憲法を攻撃するが、争えるのは【この事業の戦術】であって【憲法 V1〜V6 そのもの】ではない。憲法改正は人間専管（H1/H2）で Council の投票対象にしない。judgment ≠ decision（`final_decision` は常に null）ゆえ、重みは「憲法が自動で勝つ」にも「投票で憲法を転覆」にも設定しない。
+**水準分離ルール**（資本家の"憲法攻撃"の意味を確定）: 資本家が攻撃するのは**戦術次元での V1/V2 のストレステスト**であって、**憲法 V1〜V6 そのものの改正ではない**（改正は人間専管 H1/H2・Council の投票対象にしない）。争えるのは【この事業の戦術】に閉じる。judgment ≠ decision（`final_decision` は常に null）ゆえ、重みは「憲法が自動で勝つ」にも「投票で憲法を転覆」にも設定しない。
 
 **invocable な悪魔の代弁者（常設4極にしない）**: リスク/不可逆/致命前提は H 専管＋DONT-VENTURE＋monetary_gate の構造ゲートが受けるため第4極は常設しない（DRY）。三極が全員 GO でも成立しない致命前提を狩る必要がある時だけ `references/personas/business/devils-advocate.md` を invocable で召喚する（DH Council 判定の minority_opinion の温存）。
 
@@ -59,8 +59,8 @@ VO:L0/L1 実行中の判断点で発動する合議制判断機構。DH `crosscu
   "topic": "関係信用の事業で高単価プレミアムに寄せるべきか",
   "persona_opinions": [
     {"persona": "capitalist", "opinion": "runway と回収を考えれば単価を上げて最大化すべき", "weight": 0.34},
-    {"persona": "credit_steward", "opinion": "高単価は狙った関係信用を焼く。充足水準に留めよ", "weight": 0.33},
-    {"persona": "demand_advocate", "opinion": "そもそもターゲットはその値で払うか。WTP を安く検証してから", "weight": 0.33}
+    {"persona": "credit-steward", "opinion": "高単価は狙った関係信用を焼く。充足水準に留めよ", "weight": 0.33},
+    {"persona": "demand-advocate", "opinion": "そもそもターゲットはその値で払うか。WTP を安く検証してから", "weight": 0.33}
   ],
   "weighted_judgment": "WTP を安価検証しつつ、充足水準までの緩やかな単価調整に留める",
   "minority_opinion": "資本家の積極値上げ案を two-runway 競合として温存する",

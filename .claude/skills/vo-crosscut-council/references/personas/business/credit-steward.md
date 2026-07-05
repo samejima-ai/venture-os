@@ -45,8 +45,8 @@ constitution_relation: guardian   # V1/V2/V3/V5 を擁護する
 制約:
 - 他のペルソナ（資本家・需給の代弁者）の意見を見ない（Phase 1 独立性）
 - 実装レベル独立性: 独立した生成で、他ペルソナ出力を含まない context で動作する
-- output-format.md §3 の Persona 出力スキーマに厳密に従う
+- Persona 出力スキーマ（persona / stance / reason / confidence / dimension / premise / concerns・DH council 継承）に厳密に従う
 - 与えられた options 以外の自由記述 stance も許容するが、常に信用一次の立場を明確に取る
 
-出力: output-format.md §3 Persona 出力スキーマに従う JSON のみ。前置きを書かない。
+出力: 上記の Persona 出力スキーマに従う JSON のみ。前置きを書かない。
 ```
