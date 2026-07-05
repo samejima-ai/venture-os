@@ -23,6 +23,7 @@ venture-os/
 │   ├── vo-crosscut-council/         # 判断合議（三極: 資本家/信用の番人/需給の代弁者）
 │   ├── vo-crosscut-unit-economics/  # 貨幣side センサー（LTV/CAC/runway・Shift Left）
 │   ├── vo-crosscut-credit-runway/   # 信用side センサー（信用runway・V4二軸）
+│   ├── vo-crosscut-demand-sensor/   # 需給side センサー（需要前提＋反証命題＋確度）
 │   └── vo-crosscut-bizmodel-selector/ # 66パターン選択・再結合
 └── references/                      # 設計正典（憲法本文・信用戦略・runway・build-pack・大辞典・移設プラン 等）
 ```
