@@ -12,7 +12,7 @@ DH（dialog-harness）の兄弟メタスキル。全体目次。
 | スキル | 責務 |
 |---|---|
 | `vo-layer0-venture-architect` | VO:L0 設計（テーゼ・信用戦略 CQ1〜4・BMパターン×市場ポスチャ・ユニットエコノミクス机上・VENTURE-REGIME 判定） |
-| `vo-crosscut-council` | 判断合議（投資家/創業者/懐疑的顧客・judgment・two-runway） |
+| `vo-crosscut-council` | 判断合議（三極: 資本家/信用の番人/需給の代弁者・judgment・two-runway） |
 | `vo-crosscut-unit-economics` | 貨幣side センサー（LTV/CAC/粗利/runway・第1層計算的） |
 | `vo-crosscut-credit-runway` | 信用side センサー（信用runway・V4 二軸の片肺） |
 | `vo-crosscut-bizmodel-selector` | 66パターン選択・再結合（信用蓄積性で選好） |

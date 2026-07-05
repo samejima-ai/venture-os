@@ -1,11 +1,11 @@
 ---
 name: vo-crosscut-council
 origin: venture-os
-version: 0.1.0
+version: 0.2.0
 compatibility: DH crosscut-council の判定機構（consensus-protocol / ctl-calculation / 合議6公理）を継承。ペルソナのみ VO 素材へ差替。
 description: >-
   venture-os の判断合議機構。VO:L0/L1 の実行中に生じた判断点（実装方針の拮抗・トレードオフ・
-  憲法抵触・不可逆操作・二runway競合）を、投資家/創業者/懐疑的顧客の3ペルソナで並列独立に評価し、
+  憲法抵触・不可逆操作・二runway競合）を、資本家/信用の番人/需給の代弁者の三極（単極フォース）で並列独立に評価し、
   重み付き判定（judgment）を返す。決定（decision）ではない — final_decision は常に null で、
   実装者/人間が合意プロセスで方針化する。Make sure to use this skill whenever a venture judgment is
   in tension: 信用と貨幣のトレードオフ、どの信用ポジション/BMパターン/価格を採るか拮抗している、
@@ -16,9 +16,9 @@ description: >-
 
 # VO Council（判断合議・横断機構）
 
-VO:L0/L1 実行中の判断点で発動する合議制判断機構。DH `crosscut-council` の判定機構を**そのまま継承**し、business ペルソナ3体を VO 素材へ差し替える（第3条・再実装しない）。
+VO:L0/L1 実行中の判断点で発動する合議制判断機構。DH `crosscut-council` の判定機構を**そのまま継承**し、business ペルソナを VO の**三極（単極フォース）**へ差し替える（第3条・再実装しない）。
 
-> **正典参照**: 詳細は `../../../references/build-pack/03-council-personas.md`（ペルソナ定義・VTL算出）と `../../../references/PHILOSOPHY-venture-os-draft-v1.md`（第6条 人間≒Council / V1〜V6）。合議6公理は DH council-philosophy を継承。VO 独立 repo 移設時に references/ へ colocate。
+> **正典参照**: 判定機構は DH `crosscut-council`（consensus / ctl / 合議6公理）を継承。ペルソナ定義は `references/personas/business/`（三極 ＋ invocable 悪魔の代弁者）、要約と VTL 算出は `../../../references/build-pack/03-council-personas.md`、憲法は `../../../references/PHILOSOPHY-venture-os-draft-v1.md`（第6条 人間≒Council / V1〜V6）。VO 独立 repo 移設時に references/ へ colocate。
 
 ## 不変核（DH 合議6公理を継承）
 
@@ -26,15 +26,21 @@ VO:L0/L1 実行中の判断点で発動する合議制判断機構。DH `crosscu
 - **対立の哲学**: 対立は悪でなく、構造化して見える化するのが目的。`minority_opinion` を常に保持。
 - **認識合わせと合意の分離**: Judgment Agent 出力は**判断（judgment）であって決定（decision）ではない**。`final_decision` は常に null。実装者/人間が合意プロセスで方針化する。
 
-## 3ペルソナ（presentation 差替のみ・logic は council 本体）
+## ペルソナ＝三極の単極フォース（presentation 差替のみ・logic は council 本体）
 
-| ペルソナ | 視点 | 重視条 | 典型の問い |
-|---|---|---|---|
-| **投資家** | 資本効率・継続性・スケール | V4 継続 / V2 充足 | 「継続を脅かさないか。runway は。回収は」 |
-| **創業者** | ビジョン・信用の張り方・実行 | V1 信用一次 / V3 ループ | 「狙った信用ポジションを積むか、逸れるか」 |
-| **懐疑的顧客** | 真正性・体験・不信の芽 | V5 真正性 / 第4条 | 「earned な信用か、manufactured か。顧客は見抜く」 |
+役割の混合（旧: 投資家/創業者/懐疑的顧客 ── 投資家と創業者が二重に金を見て憲法に逆風、顧客は真正性専業で需給を欠き最弱）ではなく、**単極のフォース**（1体＝1つの力の偏執）で立てる。各辺が本気でぶつかり判断の耐久力が出る。設計判断は DH Council で叩いた（三極採用・第4極不常設・水準分離）。定義は `references/personas/business/`。
 
-3体で **信用（創業者）× 貨幣継続（投資家）× 真正性/顧客（懐疑的顧客）** を張り、VO 憲法の主要緊張（信用⇄貨幣・真正⇄成長）を可視化する。
+| ペルソナ | 極 | 憲法との関係 | 典型の問い | 定義 |
+|---|---|---|---|---|
+| **資本家** | 利益（貨幣最大化） | ストレステスター | 「なぜ最大化しない。充足は競争で死ぬ＝V4 の失敗では」 | `capitalist.md` |
+| **信用の番人** | 信用（真正・充足） | 擁護者（V1/V2/V3/V5） | 「狙った信用を積むか。earned か。焼いていないか」 | `credit-steward.md` |
+| **需給の代弁者** | 需給（顧客の真実・WTP） | 直交 | 「ターゲットは実在し、その値で払うか。需給ギャップは」 | `demand-advocate.md` |
+
+**対立トライアングル**: 利益⇔信用（最大化 vs 充足）／利益⇔需給（儲かる形 vs 客が欲しい形）／信用⇔需給（深い信頼 vs 大衆需要）。3辺すべてが衝突する＝耐久力の源。
+
+**水準分離ルール**（資本家の"憲法攻撃"の意味を確定）: 資本家が攻撃するのは**戦術次元での V1/V2 のストレステスト**であって、**憲法 V1〜V6 そのものの改正ではない**（改正は人間専管 H1/H2・Council の投票対象にしない）。争えるのは【この事業の戦術】に閉じる。judgment ≠ decision（`final_decision` は常に null）ゆえ、重みは「憲法が自動で勝つ」にも「投票で憲法を転覆」にも設定しない。
+
+**invocable な悪魔の代弁者（常設4極にしない）**: リスク/不可逆/致命前提は H 専管＋DONT-VENTURE＋monetary_gate の構造ゲートが受けるため第4極は常設しない（DRY）。三極が全員 GO でも成立しない致命前提を狩る必要がある時だけ `references/personas/business/devils-advocate.md` を invocable で召喚する（DH Council 判定の minority_opinion の温存）。
 
 ## 発動する判断点（C カテゴリ・第6条）
 
@@ -52,12 +58,12 @@ VO:L0/L1 実行中の判断点で発動する合議制判断機構。DH `crosscu
 {
   "topic": "関係信用の事業で高単価プレミアムに寄せるべきか",
   "persona_opinions": [
-    {"persona": "investor", "opinion": "runway を考えると単価を上げたい", "weight": 0.34},
-    {"persona": "founder", "opinion": "高単価は狙った関係信用を焼くリスク", "weight": 0.33},
-    {"persona": "skeptic_customer", "opinion": "顧客は値上げの意図を見透かす", "weight": 0.33}
+    {"persona": "capitalist", "opinion": "runway と回収を考えれば単価を上げて最大化すべき", "weight": 0.34},
+    {"persona": "credit-steward", "opinion": "高単価は狙った関係信用を焼く。充足水準に留めよ", "weight": 0.33},
+    {"persona": "demand-advocate", "opinion": "そもそもターゲットはその値で払うか。WTP を安く検証してから", "weight": 0.33}
   ],
-  "weighted_judgment": "充足水準までの緩やかな単価調整に留める",
-  "minority_opinion": "投資家の積極値上げ案を two-runway 競合として温存する",
+  "weighted_judgment": "WTP を安価検証しつつ、充足水準までの緩やかな単価調整に留める",
+  "minority_opinion": "資本家の積極値上げ案を two-runway 競合として温存する",
   "judgment_confidence": 0.62,
   "escalate_to_human": false,
   "final_decision": null
