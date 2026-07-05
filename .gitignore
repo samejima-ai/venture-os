@@ -1,0 +1,5 @@
+# DH 開発スキルは SessionStart hook（.claude/hooks/session-start.sh）が
+# dialog-harness submodule から毎セッション .claude/skills/ に symlink する（非追跡）。
+# tracked なのは VO 自身の vo-* スキルのみ。
+/.claude/skills/*
+!/.claude/skills/vo-*/
