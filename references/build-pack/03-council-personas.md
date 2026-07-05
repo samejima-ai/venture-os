@@ -21,7 +21,7 @@ VO Council は DH Council の**判定機構をそのまま移植**し、business
 
 **水準分離ルール**: 資本家が攻撃するのは**戦術次元での V1/V2 のストレステスト**であって、**憲法 V1〜V6 そのものの改正ではない**（改正は人間専管 H1/H2・Council の投票対象にしない・judgment ≠ decision）。争えるのは【事業の戦術】に閉じる。
 
-**invocable な悪魔の代弁者（常設4極にしない）**: リスク/不可逆/致命前提は H 専管＋DONT-VENTURE＋monetary_gate の構造ゲートが受けるため第4極は常設しない（DRY）。致命前提を狩る必要がある時だけ `devils-advocate.md` を invocable で召喚する。需給の判断データ供給元「需給センサー」skill は別途新設予定（unit-economics=貨幣・credit-runway=信用 の兄弟・後続 PR）。
+**invocable な悪魔の代弁者（常設4極にしない）**: リスク/不可逆/致命前提は H 専管＋DONT-VENTURE＋monetary_gate の構造ゲートが受けるため第4極は常設しない（DRY）。致命前提を狩る必要がある時だけ `devils-advocate.md` を invocable で召喚する。需給の判断データ供給元「需給センサー」skill（`vo-crosscut-demand-sensor`）は新設済み（unit-economics=貨幣・credit-runway=信用 の兄弟＝センサー三位一体・"反証可能前提"型 proxy）。
 
 ## 起動する判断点（C カテゴリ・第6条）
 
