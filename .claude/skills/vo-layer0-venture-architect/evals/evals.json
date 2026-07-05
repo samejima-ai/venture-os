@@ -1,0 +1,37 @@
+{
+  "skill_name": "vo-layer0-venture-architect",
+  "notes": "design_only 環境のため skill-creator の subagent/baseline/eval-viewer/description最適化はスキップし、机上でシリアル自己評価する（skill-creator 制約環境ガイダンス準拠）。assertions は VO 憲法・build-pack への適合で判定。",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "個人開発者向けに、API のレート制限を自動で最適化する小さな SaaS を作りたい。まだアイデアだけ。",
+      "expected_output": "THESIS/VENTURE-REGIME/DONT-VENTURE 草案。信用ポジション=開発者×能力信用（CQ1-4 確定）、BMパターン=従量/PLG、市場ポスチャ=セルフサーブ下層、ユニットエコノミクス机上、venture_scope=design_only、DH要否=要（後で発注）。",
+      "assertions": [
+        "信用ポジションが1つに絞られ THESIS に確定している",
+        "ユニットエコノミクス机上（LTV/CAC/粗利/runway）が数値枠として提示される",
+        "venture_scope が design_only 既定になっている",
+        "資金調達/雇用等が DONT-VENTURE の L-FROZEN として人間専管に置かれている"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "地元の飲食店を応援するファンコミュニティを作って、月額会員で回したい。粗利はあまり無いかも。",
+      "expected_output": "信用ポジション=コミュニティ×関係信用、BMパターン=メンバーシップ/ロイヤルティ、充足原則の適用（稼ぎすぎない）、ユニットエコノミクス机上で低粗利の破綻可否を算数判定。破綻なら pivot 献上。",
+      "assertions": [
+        "関係信用を焼く代謝（押し売り）が DONT-VENTURE に入る",
+        "充足水準（V2）が継続ラインとして設定される",
+        "低粗利が LTV/CAC で破綻するか算数で判定されている"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "既存の competitor が広告だらけなので、あえて広告ゼロ・完全透明価格でいく写真共有サービス。",
+      "expected_output": "市場ポスチャ=Aikido（競争軸の反転）、信用ポジション=顧客×誠実信用、隠れた収益/ダークパターンを DONT-VENTURE に明示、代謝は誠実信用を焼かない設計（透明定額）。",
+      "assertions": [
+        "市場ポスチャが Aikido 系（誰と戦わないか）として確定",
+        "誠実信用と整合しない代謝（隠れ課金・ステマ）が禁止列に入る",
+        "信用の真正性ガードレール（V5）が反映されている"
+      ]
+    }
+  ]
+}
