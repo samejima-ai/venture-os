@@ -7,7 +7,7 @@
 
 | 層 | 内容 | 出典 |
 |---|---|---|
-| **下層（継承）** | DH 9条憲法 | **dialog-harness を継承** → https://github.com/samejima-ai/dialog-harness （`.claude/skills/layer0-spec-architect/references/philosophy.md`）。継承方式は submodule 予定（`references/migration/INHERITANCE-METHODS.md`）。VO 側で 9条は改訂しない（第6条 自己改訂禁止・L-FROZEN-META） |
+| **下層（継承）** | DH 9条憲法 | **dialog-harness を継承** → https://github.com/samejima-ai/dialog-harness （`.claude/skills/layer0-spec-architect/references/philosophy.md`）。継承方式は **submodule 案(a) 確定・実装済み**（`dialog-harness/` @ pinned SHA `77faa7c`・`references/migration/INHERITANCE-METHODS.md`）。VO 側で 9条は改訂しない（第6条 自己改訂禁止・L-FROZEN-META） |
 | **上層（VO 固有）** | VO 固有条 **V1〜V6**（信用経済の軸） | 本文 → `references/PHILOSOPHY-venture-os-draft-v1.md`（草案） |
 
 ## VO 固有条 V1〜V6（要旨）
