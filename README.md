@@ -24,6 +24,7 @@ venture-os/
 │   ├── vo-crosscut-unit-economics/  # 貨幣side センサー（LTV/CAC/runway・Shift Left）
 │   ├── vo-crosscut-credit-runway/   # 信用side センサー（信用runway・V4二軸）
 │   ├── vo-crosscut-demand-sensor/   # 需給side センサー（需要前提＋反証命題＋確度）
+│   ├── vo-crosscut-market-smoke/    # 第2層 需要スモークテスト実働（gtm 昇格で有効）
 │   └── vo-crosscut-bizmodel-selector/ # 66パターン選択・再結合
 └── references/                      # 設計正典（憲法本文・信用戦略・runway・build-pack・大辞典・移設プラン 等）
 ```
