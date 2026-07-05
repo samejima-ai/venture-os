@@ -1,7 +1,7 @@
 ---
 name: vo-layer0-venture-architect
 origin: venture-os
-version: 0.1.0
+version: 0.2.0
 compatibility: dialog-harness 兄弟メタスキル。憲法 philosophy（V1〜V6）を共通祖先として継承（VO 独立 repo 移設時に submodule/パッケージで解決）。
 description: >-
   人間の事業イメージ・意図を対話で具体化し、THESIS / VENTURE-REGIME / DONT-VENTURE を生成して、
@@ -36,6 +36,7 @@ description: >-
 
 - 人間はイメージ共有と認識の擦り合わせだけを行う。ドキュメント化は全て AI が処理する（第4条）。
 - **信用一次・貨幣二次（V1）**: 事業の一次目的は信用資本の獲得。貨幣は活動継続に足るだけ充足する（V2・最大化しない）。
+- **最大化フレームは充足へ reframe（V2）**: 人間が「売上最大化/最速スケール/大型調達前提」を求めても、目標を「継続に足る」へ置き換えて擦り合わせる。成長のための信用犠牲は二runway 拮抗として Council へ献上する。
 - **Shift Left ＝算数を先に（第2条）**: 推論・実市場投下の前に、ユニットエコノミクス（LTV/CAC/粗利/runway）で自明な破綻を計算で潰す。
 - **可逆性で線を引く（第9条）**: 金・法・人・撤退・調達は不可逆ゆえ人間専管。可逆（設計・机上検証）は委譲。**design_only 既定**では実市場に出さない。
 - **認識ズレがゼロになるまでレビューループ（第1条 A⇄B）**。「だいたい OK」を許容しない。
@@ -56,7 +57,8 @@ description: >-
 2.  対話による具体化 — 顧客 × 課題 × 価値提案を「仮説 × 検証可能条件」の粒度へ
 3.  信用戦略サブフェーズ（CQ1〜CQ4）— 誰から/どの信用/どう張る/どう焼かず代謝（一次信用ポジションを1つに絞る）
 4.  何で稼ぐか × 誰と戦わないか — BM パターン再結合（IT-active）＋ 市場ポスチャ（G）確定
-5.  ユニットエコノミクス机上 — LTV/CAC/粗利/回収期間/runway を算数で。破綻なら pivot 献上（タイプA）
+5.  ユニットエコノミクス机上 — LTV/CAC/粗利/回収期間/runway を算数で。貨幣破綻なら pivot 献上（タイプA）
+5.5 信用破綻チェック（V1 対称ガード）— 核代謝が一次信用ポジションを不可避に焼くなら貨幣が黒字でも V1 破綻＝ pivot 献上（信用破綻型）。回避可能な副次活動なら DONT-VENTURE へ。成長のための信用犠牲 vs 継続が拮抗するなら Council（two-runway 裁定）へ献上
 6.  ドキュメント化 — THESIS.md / DONT-VENTURE.md 生成
 7.  VENTURE-REGIME 判定 — 事業ステージ/二軸+信用ポジション/venture_scope/VTL+monetary_gate/充足水準
 8.  人間レビュー → 認識ズレがあれば 2 に戻る
@@ -82,6 +84,10 @@ description: >-
 ### 5. ユニットエコノミクス机上（Shift Left の算数・第2条）
 
 `../../../references/build-pack/04-unit-economics-protocol.md` に従い、推論の前に計算で潰す。LTV/CAC < 1 は破綻＝ pivot 献上（タイプA）。充足水準（V2）＝「継続に足る額」を基準に、過剰マネタイズ（信用を焼く）を検出する。
+
+### 5.5 信用破綻チェック（V1 対称ガード・第2条の信用版）
+
+貨幣の viability（LTV/CAC）が通っても、事業の**核となる代謝が一次信用ポジションを不可避に焼く**なら venture としては破綻（money-viable ≠ venture-viable・V1）。単発の副次活動なら DONT-VENTURE へ隔離するが、**核代謝そのものが信用破綻**なら DONT に1行移しても事業が空になるため、貨幣破綻（タイプA）と対称に **pivot 献上（信用破綻型）** する。信用側の測定尺度は `../../../references/CREDIT-RUNWAY-venture-os-v1.md`。「継続のための信用蓄積 vs 黒字化のための信用犠牲」が拮抗する場合は `../../../references/TWO-RUNWAY-ARBITRATION-venture-os-v1.md` に沿って Council へ献上する。
 
 ### 7. VENTURE-REGIME 判定
 
@@ -112,7 +118,7 @@ description: >-
 
 次を全て満たすまで VO:L1 へ譲渡しない:
 1. THESIS に **信用ポジションが確定**（CQ1〜4 の帰結）。
-2. ユニットエコノミクス机上で破綻が無い（LTV/CAC ≥ 1・runway が回収期間を上回る）、または破綻なら pivot 献上済み。
+2. **貨幣・信用の両 viability**（V4 二軸）: (a) ユニットエコノミクス机上で破綻が無い（LTV/CAC ≥ 1・runway が回収期間を上回る）、かつ (b) 核代謝が一次信用ポジションを不可避に焼かない（V1・信用破綻型 pivot 未該当）。いずれか破綻なら pivot 献上済み。
 3. THESIS / VENTURE-REGIME / DONT-VENTURE が相互に矛盾しない（DONT 自己照合）。
 4. 参照リンク（build-pack 等）が実在（broken reference なし）。
 5. venture_scope が確定（既定 design_only）。
