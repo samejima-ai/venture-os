@@ -20,7 +20,7 @@ venture-os/
 ├── philosophy.md                    # 憲法（継承 DH 9条 ＋ VO V1〜V6・草案）
 ├── .claude/skills/                  # vo- 名前空間のスキル（DH と同居しても衝突しない）
 │   ├── vo-layer0-venture-architect/ # VO:L0 設計（テーゼ・信用戦略・BMパターン・市場ポスチャ・算数・REGIME判定）
-│   ├── vo-crosscut-council/         # 判断合議（投資家/創業者/懐疑的顧客）
+│   ├── vo-crosscut-council/         # 判断合議（三極: 資本家/信用の番人/需給の代弁者）
 │   ├── vo-crosscut-unit-economics/  # 貨幣side センサー（LTV/CAC/runway・Shift Left）
 │   ├── vo-crosscut-credit-runway/   # 信用side センサー（信用runway・V4二軸）
 │   └── vo-crosscut-bizmodel-selector/ # 66パターン選択・再結合

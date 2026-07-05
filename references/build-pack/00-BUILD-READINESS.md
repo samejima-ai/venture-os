@@ -9,7 +9,7 @@
 |---|---|---|
 | 01 | `01-venture-regime-protocol.md` | VENTURE-REGIME 判定（ステージ/二軸/scope/VTL/monetary_gate/充足） |
 | 02 | `02-output-templates.md` | L0 出力3種（THESIS / VENTURE-REGIME / DONT-VENTURE）雛形 |
-| 03 | `03-council-personas.md` | Council ペルソナ（投資家/創業者/懐疑的顧客）＋VTL算出 |
+| 03 | `03-council-personas.md` | Council ペルソナ（三極: 資本家/信用の番人/需給の代弁者）＋VTL算出 |
 | 04 | `04-unit-economics-protocol.md` | ユニットエコノミクス机上（Shift Left の算数） |
 | 05 | `05-naming-convention.md` | DH/VO 接頭語・責務呼称の規約 |
 | 06 | `06-vo-dh-topology.md` | VO↔DH 二重入れ子ループ連携契約 |

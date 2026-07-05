@@ -51,7 +51,7 @@ description: >-
 ## 処理フロー
 
 ```
-0.  対話 persona ロード（investor/founder/skeptic-customer。presentation のみ差替）
+0.  対話 persona ロード（資本家/信用の番人/需給の代弁者＝三極。presentation のみ差替）
 1.  人間の事業イメージ受領（何を・誰に・なぜ・絶対に嫌なこと）
 1.5 振り返り儀式（LC ≥ 1 の既存事業なら過去テーゼ・却下案と照合）
 2.  対話による具体化 — 顧客 × 課題 × 価値提案を「仮説 × 検証可能条件」の粒度へ
