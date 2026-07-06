@@ -22,6 +22,7 @@ DH（dialog-harness）の兄弟メタスキル。全体目次。
 ## 正典（`references/`）
 
 - 憲法本文: `PHILOSOPHY-venture-os-draft-v1.md`
+- 憲法批准資料: `V4-GOING-CONCERN-basis-*`（V4 の理論的基盤・(B)軸・実証・棄却対案）
 - 信用: `CREDIT-STRATEGY-*`（戦略）/ `CREDIT-RUNWAY-*`（測定）/ `TWO-RUNWAY-ARBITRATION-*`（裁定）
 - 設計: `CONCEPTION-*-v1/v2`（兄弟定立・写像・5決定）/ `EXECUTION-ATOZ-*`（GAP マップ）
 - ビルド: `build-pack/00-06`（REGIME判定・出力テンプレ・Councilペルソナ・ユニットエコノミクス・命名規約・VO↔DH連携）
