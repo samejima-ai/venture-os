@@ -19,6 +19,7 @@ DH（dialog-harness）の兄弟メタスキル。全体目次。
 | `vo-crosscut-demand-sensor` | 需給side センサー（需要前提＋反証可能命題＋確度・Council 需給の代弁者へ供給） |
 | `vo-crosscut-market-smoke` | 第2層 需要スモークテスト実働（LP/広告 deploy・gtm 昇格で有効・demand-sensor の実走） |
 | `vo-crosscut-bizmodel-selector` | 66パターン選択・再結合（信用蓄積性で選好） |
+| `vo-crosscut-venture-ledger` | 学習機構（VENTURE-LOG append-only → Best Practice/Anti-pattern 蒸留 → 業務ナレッジベース・検証済outcomeのみ・人間承認） |
 
 ## 正典（`references/`）
 
