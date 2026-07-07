@@ -1,8 +1,8 @@
 ---
 name: vo-layer1-venture-exec
 origin: venture-os
-version: 0.1.0
-compatibility: dialog-harness 兄弟メタスキル。DH `layer1-autonomous-dev` の事業版。地盤は `VO-L1-EXECUTION-BASIS`。
+version: 0.2.0
+compatibility: dialog-harness 兄弟メタスキル。DH `layer1-autonomous-dev` の事業版。地盤は `VO-L1-EXECUTION-BASIS`、行動指針＋検証機構は `references/execution-playbook.md`。
 description: >-
   venture-os の VO:L1（実働責務）。VO:L0（venture-architect）が設計した THESIS を受け取り、
   「AI が現在実際にできること」ベースで事業を実市場で執行する（設計でなく実働）。事業を業種でなく
@@ -22,7 +22,7 @@ description: >-
 
 VO:L0（`vo-layer0-venture-architect`）が机上で設計した **THESIS** を受け取り、**AI が現在実際にできること**ベースで事業を実市場で執行する L1 スキル。DH `layer1-autonomous-dev`（意図→自律ソフト開発）の**事業版**（THESIS→自律事業執行）。
 
-> **正典参照**: 実働の地盤・不変条件・実証は `../../../references/VO-L1-EXECUTION-BASIS-venture-os-v1.md`（本スキルは同文書の §8 必須要件の実装）。入力は VO:L0 の `THESIS`/`VENTURE-REGIME`/`DONT-VENTURE`。クロスカット: 需要実検証 `../vo-crosscut-market-smoke/`、三センサー（`vo-crosscut-unit-economics`/`credit-runway`/`demand-sensor`）、判断 `vo-crosscut-council`。憲法 `../../../references/PHILOSOPHY-venture-os-draft-v1.md`（V1〜V6・第2/3/6/9条）。VO 独立 repo 移設時に references/ へ colocate。
+> **正典参照**: 実働の地盤・不変条件・実証は `../../../references/VO-L1-EXECUTION-BASIS-venture-os-v1.md`（本スキルは同文書の §8 必須要件の実装）。**行動指針（状況→行動）と検証機構の実装規格は `references/execution-playbook.md`**（DH の5層検出スタック／independent-reviewer 隔離／harness-verifier 一方向独立の事業版翻訳）。入力は VO:L0 の `THESIS`/`VENTURE-REGIME`/`DONT-VENTURE`。クロスカット: 需要実検証 `../vo-crosscut-market-smoke/`、三センサー（`vo-crosscut-unit-economics`/`credit-runway`/`demand-sensor`）、判断 `vo-crosscut-council`。憲法 `../../../references/PHILOSOPHY-venture-os-draft-v1.md`（V1〜V6・第2/3/6/9条）。VO 独立 repo 移設時に references/ へ colocate。
 
 ## 位置づけと有効化ゲート（design_only では INACTIVE）
 
